@@ -115,6 +115,28 @@ function prop_access(object, path) {
   return subject;
 }
 
+function verlan(string){
+  if (string.length > 0) {
+    let splitString = string.split("");
+    let reverseArray = splitString.reverse();
+
+    return reverseArray.join("");
+  } else {
+    return string;
+  }
+}
+
+function yoda(string){
+  if (string.length > 0) {
+    let splitString = string.split(" ");
+    let reverseArray = splitString.reverse();
+
+    return reverseArray.join(" ");
+  } else {
+    return string;
+  }
+}
+
 // console.log('#1 ucfirst');
 // console.log(ucFirst('waxime'));
 //
@@ -130,8 +152,13 @@ function prop_access(object, path) {
 // console.log('#5 leet');
 // console.log(leet('ANACONDA'));
 
-
 // console.log('#6 prop_access');
 // console.log(users.length());
 // console.log(prop_access(users, 'family.father.firstName'));
 // console.log(leet(users, 'esgi.2.age'));
+
+// console.log('#7 verlan');
+// console.log(verlan('Waxime aveline'));
+
+console.log('#8 yoda');
+console.log(yoda('Waxime aveline'));
