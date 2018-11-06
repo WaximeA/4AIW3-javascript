@@ -160,5 +160,5 @@ function yoda(string){
 // console.log('#7 verlan');
 // console.log(verlan('Waxime aveline'));
 
-console.log('#8 yoda');
-console.log(yoda('Waxime aveline'));
+// console.log('#8 yoda');
+// console.log(yoda('Waxime aveline'));
