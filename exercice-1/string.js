@@ -1,4 +1,4 @@
-let users = {
+var users = {
   family: {
     father: {
       firstName: 'John',
@@ -100,18 +100,19 @@ function leet(string) {
 
 function prop_access(object, path) {
   let allKeys = path.split('.');
-  if (typeof object !== "undefined") {
-    let properties = '';
-    for (let i = 0; i < allKeys.length; i++) {
-      properties = properties + '[\'' + allKeys[i] + '\']';
-      // console.log(object + properties);
-      // console.log(object['family']['father']['firstName']);
-    }
+  let subject = object;
 
-    return object + properties;
-  } else {
-    return "Please give me an object..";
+  for (let i = 0; i < allKeys.length; i++) {
+    if (subject[allKeys[i]] === null) {
+
+      return null;
+    }
+    else {
+      subject = subject[allKeys[i]];
+    }
   }
+
+  return subject;
 }
 
 // console.log('#1 ucfirst');
