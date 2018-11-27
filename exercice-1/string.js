@@ -153,9 +153,7 @@ function yoda(string){
 // console.log(leet('ANACONDA'));
 
 // console.log('#6 prop_access');
-// console.log(users.length());
 // console.log(prop_access(users, 'family.father.firstName'));
-// console.log(leet(users, 'esgi.2.age'));
 
 // console.log('#7 verlan');
 // console.log(verlan('Waxime aveline'));
