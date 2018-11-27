@@ -38,7 +38,7 @@ function ucFirst(string) {
   }
 }
 
-function capatalize(string) {
+function capitalize(string) {
   if (string.length > 0) {
     let sentance = [];
     let allWords = string.split(' ');
@@ -140,8 +140,8 @@ function yoda(string){
 // console.log('#1 ucfirst');
 // console.log(ucFirst('waxime'));
 //
-// console.log('#2 capatalize');
-// console.log(capatalize('waxime aveline'));
+// console.log('#2 capitalize');
+// console.log(capitalize('waxime aveline'));
 
 // console.log('#3 camelCase');
 // console.log(camelCase('waxime aveline'));
