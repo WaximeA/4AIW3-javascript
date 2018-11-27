@@ -55,7 +55,7 @@ function capitalize(string) {
 
 function camelCase(string) {
   if (string.length > 0) {
-    let upperString = capatalize(string);
+    let upperString = capitalize(string);
 
     return upperString.replace(/\s/g, '');
   } else {
