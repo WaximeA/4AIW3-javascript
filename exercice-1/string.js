@@ -160,3 +160,5 @@ function yoda(string){
 
 // console.log('#8 yoda');
 // console.log(yoda('Waxime aveline'));
+
+// vig missing
