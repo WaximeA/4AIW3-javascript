@@ -1,3 +1,24 @@
+type_check = function(variable, conf) {
+  var key;
+  for (key in Object.keys.(conf){
+    switch(key) {
+      case 'type':
+        if(!type_check_v1(variable)) return false;
+      case 'value':
+        if (JSON.stringify(variable) !== JSON.stringify(conf[key])) return false
+      case 'enum':
+        break;
+      case  'properties':
+        for (property in Object.keys(conf[key])){
+          if (!variable[property]) return false;
+          if (!type_check(variable[property], conf[key][property]) return false;
+        }
+        break;
+    }
+  }
+}
+
+
 function type_check_v1(arg, type) {
   if (type === 'null'){
     return arg === null;
